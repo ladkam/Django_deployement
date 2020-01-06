@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+  </head>
+  <body>
+    <h1>User list</h1>
+    <ol>
+    {% for user in Users %}
+    <li>
+    <p> User informations:<p>
+    <ul>
+      <li>First Name : {{user.FirstName}}</li>
+      <li>Last Name : {{user.LastName}}</li>
+      <li>Email : {{user.email}}</li>
+    </ul>
+    </li>
+      {% endfor %}
+    </ol>
+
+
+  </body>
+</html>
